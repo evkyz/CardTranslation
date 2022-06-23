@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.translation.CardTranslationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-06-23T09:20:37" hostname="SAMSUNG" time="32.807">
+  <properties/>
+  <testcase name="testFrom1to2cardOver10_000()" classname="ru.netology.translation.CardTranslationTest" time="23.487"/>
+  <testcase name="testFrom2to1card()" classname="ru.netology.translation.CardTranslationTest" time="1.966"/>
+  <testcase name="testFrom2to1cardOver10_000()" classname="ru.netology.translation.CardTranslationTest" time="1.937"/>
+  <testcase name="testFrom1to1card()" classname="ru.netology.translation.CardTranslationTest" time="1.731"/>
+  <testcase name="testFrom1to2card()" classname="ru.netology.translation.CardTranslationTest" time="1.905"/>
+  <testcase name="testFrom2to1cardNull()" classname="ru.netology.translation.CardTranslationTest" time="1.779"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+июн. 23, 2022 12:20:42 PM org.openqa.selenium.remote.RemoteWebDriver startSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [acceptSslCerts, handlesAlerts, javascriptEnabled, takesScreenshot]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 62236
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+июн. 23, 2022 12:20:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+июн. 23, 2022 12:20:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [acceptSslCerts, handlesAlerts, javascriptEnabled, takesScreenshot]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+июн. 23, 2022 12:20:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+</testsuite>
