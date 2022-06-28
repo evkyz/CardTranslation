@@ -50,12 +50,10 @@ public class CardTranslationTest {
         int amountAdd = Integer.parseInt(amountAdded);
         assertEquals(balanceCard2 + amountAdd, newBalanceCard2);
         assertEquals(balanceCard1 - amountAdd, newBalanceCard1);
-        //$(new ByText("Ваши карты")).should(visible);
     }
 
     @Test
     void testOverBalance() {
-        //val balanceCard1 = CardPage.BalanceCard(TestUser.getCard1Number().getNumber());
         val balanceCard2 = CardPage.BalanceCard(TestUser.getCard2Number().getNumber());
         overBalance = balanceCard2 + 1000;
         if (overBalance > balanceCard2) {
