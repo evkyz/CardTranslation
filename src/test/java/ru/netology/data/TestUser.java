@@ -12,7 +12,7 @@ public class TestUser {
         public String password;
     }
 
-    public static AuthInfo getAutInfo() {
+    public static AuthInfo getAuthInfo() {
         return new AuthInfo("vasya", "qwerty123");
     }
 

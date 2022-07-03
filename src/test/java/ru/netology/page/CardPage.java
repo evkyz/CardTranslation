@@ -7,23 +7,24 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$$x;
 
 public class CardPage {
-    private static ElementsCollection cards = $$x("//li[@class=\"list__item\"]");
-    private static final String balanceStart = "баланс: ";
-    private static final String balanceFinish = " р.";
+    private ElementsCollection cards = $$x("//li[@class=\"list__item\"]");
+    private final String balanceStart = "баланс: ";
+    private final String balanceFinish = " р.";
 
-    public static CardTranslation cardTranslation(String numberCard) {
+    public CardTranslation translationCard(String numberCard) {
         cards.find(text(numberCard.substring(16, 19))).$$("[data-test-id='action-deposit']").first().click();
         return new CardTranslation();
     }
 
-    private static int ExtractBalance(String text) {
+    private int extractBalance(String text) {
         val start = text.indexOf(balanceStart);
         val finish = text.indexOf(balanceFinish);
         val value = text.substring(start + balanceStart.length(), finish);
         return Integer.parseInt(value);
     }
-    public static int BalanceCard(String numberCard) {
+
+    public int balanceCard(String numberCard) {
         val text = cards.find(text(numberCard.substring(16, 19))).getText();
-        return ExtractBalance(text);
+        return extractBalance(text);
     }
 }
